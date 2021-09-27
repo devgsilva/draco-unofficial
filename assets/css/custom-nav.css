@@ -1,0 +1,75 @@
+header .bg-dark-transparent {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+header nav {
+    padding: 1.25rem 3.125rem !important;
+}
+
+header nav .navbar-brand {
+    padding-top: 0 !important;
+    max-width: 120px !important;
+}
+
+header nav ul li {
+    color: #fff !important;
+    font-size: 20px;
+}
+
+header nav i {
+    color: #fff !important;
+}
+
+header nav .icons-navbar a,
+header nav .icons-navbar i {
+    color: rgb(255, 255, 255) !important;
+    font-size: 20px;
+}
+
+header nav .icons-navbar {
+    max-width: 100%;
+    font-size: 24px;
+}
+
+header nav .navbar-nav-color-resposive .nav-item a {
+    color: #fff !important;
+    font-weight: 700;
+}
+
+@media (max-width: 992px) {
+    header nav {
+        padding: 1.25rem 0 !important;
+    }
+    header nav .navbar-brand {
+        padding-top: 0 !important;
+        max-width: 120px !important;
+    }
+    header nav .navbar-nav-color-resposive {
+        background: #000 !important;
+        color: #fff;
+    }
+    header nav .navbar-nav-color-resposive .nav-item a {
+        color: #fff !important;
+        font-size: 20px;
+        padding: 12px 0;
+    }
+    header nav .navbar-collapse.collapsing .navbar-nav {
+        display: block;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: -45%;
+        transition: all 0.2s ease;
+    }
+    header nav .navbar-collapse.show .navbar-nav {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        transition: left 0.35s ease;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+}

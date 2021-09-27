@@ -1,0 +1,50 @@
+.nav-left-floating {
+    position: fixed;
+    top: 40%;
+    left: 0;
+}
+
+.nav-left-floating ul {
+    padding-left: 0;
+}
+
+.nav-left-floating ul li {
+    font-size: 12px;
+    transition: all .2s ease;
+    margin: 2.188rem 0;
+}
+
+.nav-left-floating ul li.active {
+    font-size: 14px;
+    color: red !important;
+    font-weight: 700;
+}
+
+.nav-left-floating ul li span {
+    width: 20px;
+    height: 1px;
+    background: #FFFFFFFF;
+    display: block;
+    margin-right: 5px;
+    transition: all .2s ease;
+}
+
+.nav-left-floating ul li:hover span {
+    width: 20px;
+    height: 1px;
+    background: white;
+    display: block;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.nav-left-floating ul li a {
+    color: #FFFFFFFF !important;
+    text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+    .nav-left-floating {
+        display: none !important;
+    }
+}

@@ -1,0 +1,116 @@
+header .custom-header-home {
+    background: linear-gradient( 0deg, rgba(6, 0, 18, 1), rgba(34, 20, 43, .5) 40%, rgba(34, 20, 43, .5) 80%, rgba(6, 0, 18, 1)), url('../images/main-bg.webp');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    object-fit: cover;
+    min-height: 100vh;
+}
+
+header h1 {
+    font-size: 108px;
+    font-weight: 700 !important;
+    padding-top: 300px;
+}
+
+main .container .the-draco {
+    text-align: justify;
+}
+
+main .container .the-draco h2 {
+    color: grey;
+}
+
+main .exchange-infos {
+    background-image: url('../images/exchange-bg.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 18.75rem;
+}
+
+main .exchange .exchange-infos {
+    text-align: center;
+}
+
+main .exchange .exchange-infos h4 {
+    margin-top: -4%;
+}
+
+main .exchange .exchange-infos h3 {
+    background-color: red;
+    padding: 0.313rem 0.938rem;
+    margin-top: -2%;
+}
+
+main .exchange .exchange-infos small {
+    color: grey;
+}
+
+main .characteristics .container .accordion .card {
+    border: none !important;
+    margin: 10px 0;
+}
+
+main .characteristics .container .accordion .card {
+    background-color: #130D1E !important;
+    border-radius: 0;
+}
+
+main .characteristics .container .accordion .card img {
+    max-width: 250px;
+}
+
+main .characteristics .container .accordion .card button {
+    color: white;
+    text-decoration: none;
+    transition: .5s ease-out;
+}
+
+main .characteristics .container .accordion .card button[aria-expanded="true"] .fa-chevron-down {
+    transform: rotate(-180deg);
+    transition: all .5s ease-out;
+}
+
+main .characteristics .container .accordion .card button[aria-expanded="false"] .fa-chevron-down {
+    transform: rotate(0deg);
+    transition: all .5s ease-out;
+}
+
+footer .footer .container .row img {
+    max-width: 5.625rem;
+    max-height: 1.25rem;
+}
+
+footer .footer .container .row i {
+    color: #FFFFFFFF;
+    font-weight: 400 !important;
+}
+
+@media (max-width: 768px) {
+    header .custom-header-home {
+        background: linear-gradient( 0deg, rgba(6, 0, 18, 1), rgba(34, 20, 43, .1) 50%, rgba(34, 20, 43, .1) 50%, rgba(6, 0, 18, 1)), url('../images/main-bg-mobile.webp');
+        background-repeat: no-repeat;
+        background-size: auto 80%;
+        background-position: center;
+        object-fit: cover;
+    }
+    main .exchange .exchange-infos h4 {
+        margin-top: -6%;
+    }
+    main .exchange .exchange-infos h3 {
+        background-color: red;
+        padding: 0.125rem 0.938rem;
+        margin-top: -4%;
+    }
+}
+
+@media (max-width: 600px) {
+    main .exchange .exchange-infos h4 {
+        margin-top: -12%;
+    }
+    main .exchange .exchange-infos h3 {
+        background-color: red;
+        padding: 0.125rem 0.938rem;
+        margin-top: -7%;
+    }
+}
